@@ -1,0 +1,344 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'helvetica', sans-serif;
+    --color1: #75a03e;
+    --color2: #f8f8f8 ;
+    background-color: #f2f2f2;
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 12px 20px;
+}
+
+.menu {display: flex;}
+.menu li {padding-left: 30px;
+padding-right: 50px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+   
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {display: none;}
+
+
+    .shop{
+        background-image:url("images/background.jpg");
+        width: 100%;
+        height:60vh;
+        background-position:center;
+        background-size: cover;
+        padding-bottom: 20px;
+        }
+        .main_container p{
+           text-align: center; 
+           font-size: 24px; 
+           color: #181a16;
+           padding-bottom: 110px ;
+        }  
+   button{
+    background-color: #75a03e;
+    color: white;
+    padding: 15px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: large;
+    
+
+   }
+   button:hover {
+    background-color: #232323;
+    
+   }
+   .shop h1 {
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  padding:25px;
+   }
+   .shop a{
+    display:flex;
+    justify-content: center;
+   }
+   .Specialities_homepage{
+    background-color: rgb(238, 240, 239);
+    width: 100%;
+    text-align: center;
+  }
+  .Specialities_homepage h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 4%;
+  }
+  .Specialities_home {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 4%;
+  }
+  .Specialities_home div {
+    width: 30%;
+    height: 30vh;
+    padding-bottom: 70px;
+  }
+  .Specialities_home button {
+    background-color: #75a03e;
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: relative;
+    top: 60%;
+    cursor: pointer;
+  }
+  .Specialities_home button:hover {
+    background-color: #232323;
+    transition: 0.5s;
+ 
+  }
+  .Specialities_home1 {
+    background-image: url("images/samoosa.jpg");
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+  }
+  .Specialities_home2 {
+    background-image: url("images/falooda.jpg");
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+  }
+  
+  .Specialities_home3 {
+    background-image: url("images/nihari.jpg");
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+  }
+  footer {
+    background-color: rgb(238, 240, 239);
+    color: #75a03e;
+    height: 25%;
+ 
+  }
+  .social_media_links{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+  
+  }
+  .policies {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1em;
+    margin-top: 1.5%;
+    padding-bottom: 2%;
+  }
+  .policies p{
+    margin-top: 0;
+  }
+  .policies a {
+    text-decoration: none;
+    color: #75a03e;
+  
+  }
+  /* For Menu*/
+  .food {
+    width: 90%;
+    margin: 4% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .food img{
+        width: 440px;
+        height: 230px;}
+.foods {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #75a03e;
+  margin-bottom: 5%;
+  text-align: center;
+}
+ .order1{
+ text-align: right;
+   padding: 20px;
+  left: 50%;
+ margin-top: 70%;}
+  
+
+  input[type=text], select, textarea{
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  input[type=submit] {
+    background-color: #75a03e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: center;
+  }
+  .form1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  input[type=submit]:hover{
+     background-color:  black;
+  }
+  legend{
+      text-align: center;
+      font-size: 35px;
+      font-weight: bold;
+  }
+  .location {
+    width: 100%;
+
+  }
+  .location {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color:#f2f2f2 ;
+  }
+  .location h1{
+      text-align: center;
+  }
+address h1, h3, p  {
+    text-align: center;
+}
+   .map {
+    
+   text-align: center;
+  }
+ 
+.about{
+      background-color:#f2f2f2 ;
+      height: 70vh;
+  }
+  .about h1{
+      text-align: center;
+      padding: 20px;
+  }
+  
+ 
+/* media queries*/
+@media(max-width: 610px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.5s ease-in;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+   
+ #check:checked ~ .menu {right: 0;}
+
+
+    .policies{
+        display: block;
+      }
+      .policies p{
+        text-align: center;
+        margin-bottom: 0;
+      }
+      .policies a{
+        display:block;
+        text-align: center;
+        
+      }
+      .Specialities_homepage {
+        display: block;
+    
+      }
+      .Specialities_homepage div {
+        width: 100%;
+        height: 30vh;
+        margin-bottom: 2%;
+      }
+      .col-25, .col-75, input[type=submit] {
+      
+        margin-top: 0;
+      }
+     
+}
+   

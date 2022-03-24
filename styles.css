@@ -1,0 +1,190 @@
+/*-------------global----------*/
+   .container {
+   background: rgb(238, 237, 237);
+ 
+   background-size:cover;
+   
+   background-position: center ;
+   height: 100vh;
+   margin: 0;
+   font-family: 'Lobster Two', cursive;
+
+   
+}
+*, *::before, *::after {
+   box-sizing: inherit;
+}
+ /*-------------For Header----------*/
+.header1 {
+   
+   background: black;
+   overflow: hidden;
+   margin: 0;
+   width: 100%;
+   }
+
+
+
+/*-------------For nav-bar----------*/
+.nav-bar{
+   display: grid;
+   grid-template-columns:1fr 2fr;
+   align-items: center;
+   width: 100%;
+   margin:auto;
+}
+
+.nav-bar ul{
+
+   list-style-type: none;
+   display:flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: rgb(240, 235, 228);
+    padding: 1.5px;
+   
+    transition: all .5s ease;
+ } 
+ .nav-bar ul li a:hover{
+    color:rgb(212, 127, 16);
+    
+ }
+ .nav-bar a:hover{
+   text-decoration: none;
+   color:rgb(212, 127, 16);
+   transition: all .5s ease;
+}
+.logo{
+   font-size: 40px;
+   font-family: 'Lobster Two', cursive;
+   color:rgb(175, 172, 165) ;
+   text-decoration: none;
+   padding: 0;
+   margin: 0;
+}
+
+
+
+   /*-------------For hero image----------*/
+.hero-image{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url(images/pexels-laura-tancredi-7078283\ \(1\).jpg);/* Source: pixel.com*/
+   min-height:200px;
+   background-size: cover;
+   margin: 0;
+   position:relative;
+   background-repeat: no-repeat;
+   background-size: cover;
+width: 100%;
+}
+.hero-image button {
+   border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 5px 20px;
+  color: rgb(240, 235, 228);
+  font-family: 'Lobster Two', cursive;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: rgb(10, 10, 10);
+}
+
+.hero-image button:hover{
+   color:rgb(212, 127, 16);
+
+   transition: all .5s ease;
+}
+ .hero-image p{
+   font-size: 45px;
+   font-family: 'Lobster Two', cursive;
+   text-align: center;
+ }
+ .hero-text {
+   text-align: center;
+   position:relative;
+  margin: 0;
+
+ }
+   /*-------------For section cards----------*/
+  .cards{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+padding: 20px;
+grid-gap:40px;
+
+  }
+  .card{
+     background-color: rgb(10, 10, 10);; 
+     border-radius: 10px;
+     box-shadow:0 0 30px rgba(0, 0, 0, 0.3);
+     color: rgb(240, 235, 228);;
+  }
+.container1{
+
+   position:relative;
+
+    }
+    img{
+       width: 100%;
+       display: block;
+       border-radius: 10px;
+
+    }
+.details h3{
+   color:rgb(240, 235, 228); 
+  
+   font-size:25px;
+   margin: 10px 0 15px 0;
+   text-align: center;
+}
+.details h3:hover{
+   color:rgb(212, 127, 16);
+
+   transition: all .5s ease;
+}
+ /*-------------For footer----------*/
+ footer{
+   background-color:#0d0d0e;
+   color:rgb(240, 235, 228) ;
+   font-size: 20px;
+ }
+ .social_media_links{
+display: flex;
+justify-content: center;
+padding: 20px;
+background-color: blueviolet;
+ }
+ #link1{
+ padding-right: 10px;
+ }
+ #link2{
+   padding-left: 10px;
+   }
+   
+
+    .policies{
+       display: flex;
+       justify-content: space-evenly ;
+       flex-wrap: wrap;
+      
+    }
+    .policies :hover{
+      color:rgb(212, 127, 16);
+      transition: all .5s ease;
+    }
+   
+/*Responsive
+----------------------------------------------------*/
+@media screen and (min-width:730px){
+
+   header,footer {
+      text-align:center ;}
+
+}
+.cards{display: grid;
+grid-template-columns:1fr 1fr 1fr 1fr ;
+column-gap: 10px;
+  }
